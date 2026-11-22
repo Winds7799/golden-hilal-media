@@ -20,3 +20,15 @@ always pin a full commit.) The `v1` branch marks the files the app first shipped
 
 Footage is from Pexels (free to use and modify), recordings from Freesound
 (CC0). See LICENSES.md.
+
+## `ocr/` — So'm Lens text reader (website)
+
+The two networks goldenhilal.com/price-camera reads price tags with, in the browser
+(ONNX Runtime Web), fetched through jsDelivr pinned to the commit that holds them, like
+the app's models:
+
+    https://cdn.jsdelivr.net/gh/Winds7799/golden-hilal-media@<commit>/ocr/det.onnx
+
+`det.onnx` finds text (PaddleOCR PP-OCRv4 mobile detection, 4.7 MB), `rec-en.onnx` reads it
+(PP-OCRv5 English recognition, 7.8 MB), `rec-en.txt` is its character list. The page checks
+each file's size and SHA-256 and falls back to its own copy on goldenhilal.com.

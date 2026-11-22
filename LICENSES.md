@@ -37,3 +37,13 @@ share, for any purpose, with no credit required.
 | audio/fire.m4a | “campfire in a forest at night” by Duophonic — freesound.org/s/248303 (from 0:02) |
 | audio/birds.m4a | “Birdsong In Northern NSW Hinterland” by Alex_hears_things — freesound.org/s/812609 (from 0:08) |
 | audio/night.m4a | “Summer night in Georgia” by jymdavis — freesound.org/s/197328 (from 14:04) |
+
+## Text reader — PaddleOCR (Apache-2.0)
+
+PaddleOCR models by PaddlePaddle (github.com/PaddlePaddle/PaddleOCR), Apache License 2.0
+(https://www.apache.org/licenses/LICENSE-2.0), converted to ONNX by others, unchanged here.
+
+| File | Source |
+| --- | --- |
+| ocr/det.onnx | ch_PP-OCRv4_det_infer.onnx, as converted by RapidOCR (github.com/RapidAI/RapidOCR) |
+| ocr/rec-en.onnx, ocr/rec-en.txt | PP-OCRv5 English recognition, from huggingface.co/monkt/paddleocr-onnx |
