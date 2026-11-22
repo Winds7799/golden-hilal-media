@@ -47,3 +47,9 @@ PaddleOCR models by PaddlePaddle (github.com/PaddlePaddle/PaddleOCR), Apache Lic
 | --- | --- |
 | ocr/det.onnx | ch_PP-OCRv4_det_infer.onnx, as converted by RapidOCR (github.com/RapidAI/RapidOCR) |
 | ocr/rec-en.onnx, ocr/rec-en.txt | PP-OCRv5 English recognition, from huggingface.co/monkt/paddleocr-onnx |
+
+## Text reader runtime — ONNX Runtime Web 1.18.0 (MIT)
+
+`ocr/ort.wasm-core.min.js`, `ocr/ort-wasm-simd.wasm`, `ocr/ort-wasm.wasm`: unchanged from the
+onnxruntime-web 1.18.0 npm package. Copyright (c) Microsoft Corporation, MIT License
+(https://github.com/microsoft/onnxruntime/blob/main/LICENSE).

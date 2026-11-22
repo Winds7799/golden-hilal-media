@@ -30,5 +30,8 @@ the app's models:
     https://cdn.jsdelivr.net/gh/Winds7799/golden-hilal-media@<commit>/ocr/det.onnx
 
 `det.onnx` finds text (PaddleOCR PP-OCRv4 mobile detection, 4.7 MB), `rec-en.onnx` reads it
-(PP-OCRv5 English recognition, 7.8 MB), `rec-en.txt` is its character list. The page checks
-each file's size and SHA-256 and falls back to its own copy on goldenhilal.com.
+(PP-OCRv5 English recognition, 7.8 MB), `rec-en.txt` is its character list. The runtime is
+ONNX Runtime Web 1.18.0's build without threads (`ort.wasm-core.min.js`, `ort-wasm-simd.wasm`,
+`ort-wasm.wasm` for browsers without SIMD): later versions only ship a build whose memory is
+shared between threads, which Safari allows only on cross-origin-isolated pages. The page checks
+each file's size and SHA-256 and falls back to its own copies on goldenhilal.com and to raw GitHub.
